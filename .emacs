@@ -62,6 +62,8 @@
 (global-set-key (kbd "M-S-<left>") 'previous-buffer)
 (global-set-key (kbd "M-S-<right>") 'next-buffer)
 
+(setq column-number-mode t)
+
 ;; haskell ->
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
 (custom-set-variables
