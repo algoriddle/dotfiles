@@ -105,3 +105,13 @@
 (setq cua-keep-region-after-copy t)
 
 (windmove-default-keybindings 'meta)
+
+(show-paren-mode 1)
+
+;; 80 lines limit ->
+(require 'whitespace)
+(setq whitespace-line-column 80) ;; limit line length
+(setq whitespace-style '(face lines-tail))
+
+(add-hook 'prog-mode-hook 'whitespace-mode)
+;; <-- 80 lines limit
